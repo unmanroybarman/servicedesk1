@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+body {
+  background-color: rgba(51, 51, 51, 0.219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    height:100vh;
+    overflow: hidden; /*smooth scroll */
+   
+  
+}
+
+.container{
+  width:100%;
+  height:100%;
+    /* CSS smooth scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+    
+}
+
+
+nav {
+  background-color: #000;
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  /*width: 800px;*/
+  /*width:100%;*/
+    /*height:60px; */
+    
+    /*making the nav box fix*/
+    position:fixed;
+    top:0;
+  z-index: 1;
+  /*display: flex;*/
+
+  /*changing height, width of full nav box */
+  width:95%;
+  height:2.0em;
+} 
+
+
+
+
+nav a {
+  color: #fff;
+  /*margin: 0 1em;*/
+  text-decoration: none;
+  text-transform: uppercase;
+    width:100%;
+   
+}
+
+.navbar ul{
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: space-around;
+    width:100%;
+}
+
+.navbar ul li{
+  margin:0 1rem;
+  /*padding: 1rem;*/
+    /*font-size: 1.4rem; making nav bar lis item bigger */
+
+    /*lifting all the items of nav bar like home, update to top from bottom of black navbar box */
+     padding-bottom : 50%;
+}
+
+.navbar ul li a{
+   text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar ul li a:hover{
+     color:skyblue;
+}
+
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /*no matter how the browser is sized, width is always 100 view port height and we want to take up all */
+
+}
+
+
+section h1{
+  font-size: 2rem;
+  
+}
+
+/*styling out section order list for weekly updates and colring text in white */
+section ol{
+    font-size:1.2rem;
+    color:#fff;
+}
+
+/*syling update section full box in light black */
+section .sectionupdate {
+  background-color: #34495e;
+}
+
+/*styling out week date 17-20 march */
+section h2{
+  font-size: 1.3rem;
+}
+
+/* syling responsibilty section */
+section#Responsibility{
+    background-image : url(img/responsibility.JPG);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size : 80%, cover;
+    padding-top: 6.5em;
+    
+}
+
+/*styling Weekly Update sentence with google fonts and placking it little bit down */
+section#Update h1{
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 2em;
+}
+
+
+/*typewriter effect of welcome page */
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/*styling Welcome effect - knockout effect */
+.typewriter h1{
+  
+    font:                           bolder 8vw 'Alfa Slab One';
+    text-align:                     center;
+    margin:                         0;
+    background:                     url("https://rpsthecoder.github.io/img-repo/Taitō%20by%20Jezael%20Melgoza.jpg") center;
+    background-size:                contain;
+    margin:                         auto;
+    width:                          75vw;
+    background-clip:                text;
+    -webkit-background-clip:        text;
+    color:                          transparent;
+}
+
+
+/*styling out lastw.html */
+/*moving down previous update box a little bit down*/
+section#PreviousUpdate{
+    padding-top:5%;
+}
+
+/*coloring out the list item box */
+section .lastnumbers{
+    background-color: black;
+}
+
+/* making fonts big inside previous update box
+section#PreviousUpdate ol{
+    font-size: 1.2rem;
+}  */
+
+
+/* checking box of previousupdate 
+section#PreviousUpdate{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    width: 100%;
+  height: 100vh;
+}
+*/
